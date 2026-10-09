@@ -656,3 +656,59 @@ function showToast(message, type = 'info') {
         }, 350);
     }, 4000);
 }
+// Language Switcher
+const languageToggle = document.getElementById('language-toggle');
+
+let currentLanguage = 'en';
+
+const translations = {
+    en: {
+        home: 'Home',
+        about: 'About',
+        education: 'Education',
+        skill: 'Skill',
+        project: 'Project',
+        achievement: 'Achievement',
+        volunteer: 'Volunteer',
+        contact: 'Contact'
+    },
+
+    ml: {
+    home: 'തുടക്കം',
+    about: 'എന്നെക്കുറിച്ച്',
+    education: 'വിദ്യാഭ്യാസം',
+    skill: 'കഴിവുകൾ',
+    skills: 'കഴിവുകൾ',
+    project: 'പ്രോജക്റ്റുകൾ',
+    projects: 'പ്രോജക്റ്റുകൾ',
+    achievement: 'നേട്ടങ്ങൾ',
+    achievements: 'നേട്ടങ്ങൾ',
+    volunteer: 'സേവനം',
+    volunteering: 'സേവനം',
+    contact: 'കൂട്ടുചേരാം'
+}s
+};
+
+if (languageToggle) {
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Save original English names
+    navLinks.forEach(function (link) {
+        link.dataset.originalText = link.textContent.trim();
+    });
+
+    languageToggle.addEventListener('click', function () {
+        currentLanguage = currentLanguage === 'en' ? 'ml' : 'en';
+
+        navLinks.forEach(function (link) {
+            const originalText = link.dataset.originalText;
+            const key = originalText.toLowerCase();
+
+            link.textContent =
+                translations[currentLanguage][key] || originalText;
+        });
+
+        languageToggle.textContent =
+            currentLanguage === 'en' ? 'ML' : 'EN';
+    });
+}
