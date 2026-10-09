@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Sreeshma U - B.Tech Computer Science Student and Aspiring AI & Software Developer. Showcase of projects, skills, education, and achievements.">
+    <meta name="author" content="Sreeshma U">
+    <meta name="keywords" content="Sreeshma U, Portfolio, Computer Science, AI Developer, Software Developer, JCET, Mridangam, NSS">
+    <title>Sreeshma U | Portfolio & CV</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span> Sreeshma U <span class="logo-accent"></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#volunteer" class="nav-link">Volunteering</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="btn btn-secondary btn-sm" id="btn-open-customizer" title="Customize Portfolio Settings">
+                    <i data-lucide="settings"></i> <span>Customize</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section section-padding">
+        <div class="grid-container hero-grid">
+            <div class="hero-content">
+                <div class="badge-container fade-in">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">Available for Opportunities</span>
+                </div>
+                <h1 class="hero-title fade-in">
+                    Hi, I'm <span class="text-gradient">Sreeshma U</span>
+                </h1>
+                <h2 class="hero-subtitle fade-in">
+                    <span id="typed-text"></span><span class="typed-cursor">|</span>
+                </h2>
+                <p class="hero-description fade-in">
+                    B.Tech Computer Science and Engineering student driven by innovation, problem-solving, and building smart software solutions. Exploring the horizons of Artificial Intelligence and Machine Learning.
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span> <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline" id="btn-download-resume" download="Sreeshma_U_Resume.pdf">
+                        <i data-lucide="download"></i> <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in">
+                <div class="profile-frame">
+                    <div class="glow-ring glow-1"></div>
+                    <div class="glow-ring glow-2"></div>
+                    <div class="profile-image-container" id="profile-pic-display-hero">
+                        <!-- Default SVG Profile Graphic -->
+                        <svg viewBox="0 0 100 100" class="default-avatar-svg" id="default-avatar">
+                            <defs>
+                                <linearGradient id="avatar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#0a192f" />
+                                    <stop offset="50%" stop-color="#0052d4" />
+                                    <stop offset="100%" stop-color="#4364f7" />
+                                </linearGradient>
+                                <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#00c6ff" />
+                                    <stop offset="100%" stop-color="#0072ff" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="48" fill="url(#avatar-grad)" stroke="url(#glow-grad)" stroke-width="1.5"/>
+                            <text x="50" y="55" font-family="'Space Grotesk', sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">SU</text>
+                            <circle cx="50" cy="50" r="38" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-dasharray="4 4" opacity="0.5"/>
+                            <!-- Abstract Tech Dots -->
+                            <circle cx="25" cy="25" r="2" fill="#00c6ff" />
+                            <circle cx="75" cy="25" r="3" fill="#ffffff" opacity="0.7"/>
+                            <circle cx="70" cy="75" r="2" fill="#00c6ff" />
+                            <circle cx="30" cy="70" r="1.5" fill="#ffffff" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll Down">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About & Career Objective Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Discover</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="grid-container about-grid">
+                <div class="about-visual">
+                    <div class="about-card glass-panel text-center">
+                        <div class="about-avatar-wrapper" id="profile-pic-display-about">
+                            <!-- Default Avatar Placeholder for About -->
+                            <div class="about-default-avatar">SU</div>
+                        </div>
+                        <h3 class="about-name">Sreeshma U</h3>
+                        <p class="about-subtitle">Computer Science Undergrad</p>
+                        <div class="about-location">
+                            <i data-lucide="map-pin"></i> <span>Kerala, India</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-icon" id="link-github" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                            <a href="#" class="social-icon" id="link-linkedin" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" class="social-icon" id="link-email" aria-label="Email"><i data-lucide="mail"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-info">
+                    <div class="info-block glass-panel">
+                        <div class="icon-box">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>My Journey</h3>
+                            <p>I am a passionate and dedicated Computer Science Engineering student with a strong interest in Artificial Intelligence, Software Development, Web Development, Innovation, and Problem Solving. I enjoy learning new technologies, building creative projects, participating in technical competitions, innovation programs, and community service activities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-block glass-panel">
+                        <div class="icon-box">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Career Objective</h3>
+                            <p>To become a highly skilled Software Engineer and AI Professional by continuously learning emerging technologies, creating innovative software solutions, and contributing to projects that make a meaningful impact on society.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="interests-container">
+                        <h4>Areas of Interest</h4>
+                        <div class="interests-tags">
+                            <span class="tag"><i data-lucide="brain"></i> Artificial Intelligence</span>
+                            <span class="tag"><i data-lucide="code-2"></i> Software Development</span>
+                            <span class="tag"><i data-lucide="globe"></i> Web Development</span>
+                            <span class="tag"><i data-lucide="lightbulb"></i> Innovation</span>
+                            <span class="tag"><i data-lucide="terminal"></i> Problem Solving</span>
+                            <span class="tag"><i data-lucide="users"></i> Open Source</span>
+                            <span class="tag"><i data-lucide="heart"></i> Community Service</span>
+                            <span class="tag"><i data-lucide="music"></i> Classical Percussion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3>B.Tech in Computer Science and Engineering</h3>
+                        <h4 class="timeline-org">Jawaharlal College of Engineering and Technology (JCE)</h4>
+                        <p class="timeline-loc"><i data-lucide="map-pin"></i> Lakkidi, Palakkad, Kerala</p>
+                        <p class="timeline-details">Currently in Second Year (Semester 3). Focus on programming principles, algorithms, data structures, and foundational engineering subjects.</p>
+                        <div class="timeline-gpa-badge">
+                            <div class="gpa-box">
+                                <span class="gpa-val">10.00</span>
+                                <span class="gpa-lbl">Semester 1 SGPA</span>
+                            </div>
+                            <div class="gpa-box">
+                                <span class="gpa-val">9.91</span>
+                                <span class="gpa-lbl">Semester 2 SGPA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">Prior to 2024</span>
+                        <h3>Secondary & Higher Secondary Education</h3>
+                        <h4 class="timeline-org">Kerala Board of Public Examinations</h4>
+                        <p class="timeline-details">Completed core high school and higher secondary education with top honors, establishing strong foundations in Mathematics, Physics, Chemistry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Competencies</span>
+                <h2 class="section-title">Technical & Soft Skills</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="skills-wrapper">
+                <div class="skills-category-group">
+                    <h3 class="category-title"><i data-lucide="cpu"></i> Technical Skills</h3>
+                    <div class="skills-grid">
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="code"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>C Programming</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="90%"></div></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="terminal"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>Python</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="85%"></div></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="file-code"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>HTML & CSS</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="95%"></div></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="braces"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="80%"></div></div>
+                            </div>
+                        </div>
+                        
+                        
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="monitor"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>Linux Basics</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="70%"></div></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="git-branch"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>Git & GitHub(learning)</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="85%"></div></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Skill Item -->
+                        <div class="skill-card glass-panel">
+                            <div class="skill-icon-wrap"><i data-lucide="brain-circuit"></i></div>
+                            <div class="skill-info-wrap">
+                                <h4>AI & ML Foundations</h4>
+                                <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category-group">
+                    <h3 class="category-title"><i data-lucide="user-check"></i> Professional Soft Skills</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="award"></i> <span>Leadership</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="message-square"></i> <span>Communication</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="users-2"></i> <span>Teamwork</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="search-code"></i> <span>Problem Solving</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="bar-chart-2"></i> <span>Critical Thinking</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="refresh-cw"></i> <span>Adaptability</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="clock"></i> <span>Time Management</span></div>
+                        <div class="soft-skill-badge glass-panel"><i data-lucide="zap"></i> <span>Quick Learner</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section-padding bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">My Creative Work</span>
+                <h2 class="section-title">Projects Showcase</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="grid-container projects-grid">
+            <!--Project Card 1-->
+<div class="project-card glass-panel">
+                    <div class="project-media">
+                        <div class="project-overlay"></div>
+                        <div class="project-icon-large"><i data-lucide="music-4"></i></div>
+                    </div>
+                    <div class="project-details">
+                        <span class="project-type">Artificial Intelligence</span>
+                        <h3>AI Chatbot for Campus Query</h3>
+                        <p>Developed an AI-powered Campus Query Chatbot as part of NSITE,technical event.The chatbot assists students by answering frequently asked questions related to academics,departments,campus facilities,events and general college informations.The project focuses on improving accessibility,providing quick responses,and enhancing the overall campus experience through AI.</p>
+                        <div class="project-tags">
+                            <span>AI</span>
+                            <span>Chatbot</span>
+                            <span>Campus Query</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-link"><i data-lucide="file-text"></i> Project Details</a>
+             
+                        </div>
+                    </div>
+                </div>
+                   </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Milestones & Honors</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="achievements-grid">
+                <!-- Academic Excellence -->
+                <div class="achievement-card glass-panel">
+                    <div class="ach-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h3>Academic Excellence</h3>
+                    <p>Maintained top ranks in B.Tech CSE at JCET. Achieved an outstanding 10.00 SGPA in Semester 1, followed by a 9.91 SGPA in Semester 2.</p>
+                </div>
+                
+                <!-- Classical Arts -->
+                <div class="achievement-card glass-panel">
+                    <div class="ach-icon"><i data-lucide="music-2"></i></div>
+                    <h3>Classical Mridangam Artist</h3>
+                    <p>Successfully completed the rigorous 4-Year Mridangam Certificate Course(diploma) under the prestigious Kerala Kalamandalam, Thrissur.</p>
+                </div>
+
+                <!-- Skit Competition -->
+                <div class="achievement-card glass-panel">
+                    <div class="ach-icon"><i data-lucide="masks-theater"></i></div>
+                    <h3>District-Level Drama Prize</h3>
+                    <p>Secured Third Prize at the District-Level Skit Competition, demonstrating strong acting skills, stage presence, and storytelling talent.</p>
+                </div>
+                
+                <!-- YIP Recognition -->
+                <div class="achievement-card glass-panel">
+                    <div class="ach-icon"><i data-lucide="lightbulb"></i></div>
+                    <h3>Young Innovators Programme</h3>
+                    <p>Participated in the Kerala Development and Innovation Strategic Council's (K-DISC) YIP, receiving recognition for innovative technology solutions.</p>
+                </div>
+
+                <!-- Pitch Deck Presentation -->
+                <div class="achievement-card glass-panel">
+                    <div class="ach-icon"><i data-lucide="presentation"></i></div>
+                    <h3>Pitch Deck Showcase</h3>
+                    <p>Actively pitched innovative business models and technology prototypes to panels of academic and entrepreneurial judges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteering & Extra-Curriculars -->
+    <section id="volunteer" class="volunteer-section section-padding bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Beyond Academics</span>
+                <h2 class="section-title">Volunteering & Activities</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="grid-container split-grid">
+                <!-- Leadership & Volunteering -->
+                <div class="vol-col">
+                    <h3 class="sub-header-line"><i data-lucide="heart-handshake"></i> Leadership & Volunteering</h3>
+                    <div class="vol-list">
+                        <div class="vol-card glass-panel">
+                            <div class="vol-icon"><i data-lucide="shield-check"></i></div>
+                            <div class="vol-info">
+                                <h4>National Service Scheme (NSS) Volunteer</h4>
+                                <p>Active participant in college level NSS drives, contributing to social awareness camps, local village support, and eco-conservation tasks.</p>
+                            </div>
+                        </div>
+                        <div class="vol-card glass-panel">
+                            <div class="vol-icon"><i data-lucide="heart"></i></div>
+                            <div class="vol-info">
+                                <h4>Former Junior Red Cross (JRC) Volunteer</h4>
+                                <p>Gained fundamental skills in first aid, health hygiene advocacy, and community relief during early academic levels.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Extra-Curriculars & Upcoming Events -->
+                <div class="extra-col">
+                    <h3 class="sub-header-line"><i data-lucide="calendar-clock"></i> Upcoming & Extracurriculars</h3>
+                    <div class="timeline-mini">
+                        <div class="mini-item glass-panel">
+                            <span class="mini-tag upcoming">Upcoming</span>
+                            <h4>National-Level Quiz Competition</h4>
+                            <p>Registered and currently preparing for the national engineering and tech trivia challenge.</p>
+                        </div>
+                        <div class="mini-item glass-panel">
+                            <span class="mini-tag">Extracurricular</span>
+                            <h4>Classical Mridangam Performances</h4>
+                            <p>Performing South Indian classical percussion recitals at campus festivals and cultural venues.</p>
+                        </div>
+                        <div class="mini-item glass-panel">
+                            <span class="mini-tag upcoming">Upcoming</span>
+                            <h4>Hackathons & Innovation Challenges</h4>
+                            <p>Forming team clusters to participate in college hackathons and community coding initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Verified Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="certifications-container">
+                <!-- Cert Grid -->
+                <div class="certifications-grid" id="certifications-display-grid">
+                    <!-- Default Certificate 1 -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge"><i data-lucide="award"></i></div>
+                        <div class="cert-details">
+                            <h3>Elements of AI</h3>
+                            <p class="cert-issuer">MinnaLearn & University of Helsinki</p>
+                            <p class="cert-desc">Introductory course covering machine learning, neural networks, philosophy of AI, and problem-solving concepts.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Default Certificate 2 -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge"><i data-lucide="award"></i></div>
+                        <div class="cert-details">
+                            <h3> YUVA AI for All</h3>
+                            <p class="cert-issuer">Government of India & Intel</p>
+                            <p class="cert-desc">National awareness initiative focusing on basic concepts, ethical considerations, and domestic uses of artificial intelligence.</p>
+                        </div>
+                    </div>
+                    <!-- Default Certificate 3 -->
+                    <div class="cert-card glass-panel">
+                        <div class="cert-badge"><i data-lucide="award"></i></div>
+                        <div class="cert-details">
+                            <h3>Four year Diploma in Mridangam </h3>
+                            <p class="cert-issuer">Kerala Kalamandalam</p>
+                            <p class="cert-desc"> Completed a four year Mridangam course under Kerala Kalamandalam,Thrissur,gaining proficiency in Carnatic percussion and the rhythmic structures of Adi Tala,Rupaka Tala,and Triputa Tala.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding bg-darker">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="grid-container contact-grid">
+                <!-- Contact info cards -->
+                <div class="contact-info-panel">
+                    <h3 class="contact-intro-title">Let's Connect!</h3>
+                    <p class="contact-intro-desc">Feel free to reach out to me for project collaborations, internship opportunities, technical discussions, or just to say hello.</p>
+                    
+                    <div class="contact-details-list">
+                        <!-- Email Card -->
+                        <div class="contact-detail-item glass-panel">
+                            <div class="detail-icon"><i data-lucide="mail"></i></div>
+                            <div class="detail-content">
+                                <span>Email Me</span>
+                                <p id="contact-email-text">sreeshmau.placeholder@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="contact-detail-item glass-panel">
+                            <div class="detail-icon"><i data-lucide="linkedin"></i></div>
+                            <div class="detail-content">
+                                <span>LinkedIn Connection</span>
+                                <p id="contact-linkedin-text">linkedin.com/in/sreeshma-u-placeholder</p>
+                            </div>
+                        </div>
+                        
+                        <!-- GitHub Card -->
+                        <div class="contact-detail-item glass-panel">
+                            <div class="detail-icon"><i data-lucide="github"></i></div>
+                            <div class="detail-content">
+                                <span>GitHub Repositories</span>
+                                <p id="contact-github-text">github.com/sreeshma-u-placeholder</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone Card -->
+                        <div class="contact-detail-item glass-panel">
+                            <div class="detail-icon"><i data-lucide="phone"></i></div>
+                            <div class="detail-content">
+                                <span>Phone Number</span>
+                                <p id="contact-phone-text">+91 98765 43210 (Placeholder)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-panel glass-panel">
+                    <form id="contact-form" onsubmit="event.preventDefault(); showToast('Message sent successfully! (Demo)', 'success'); this.reset();">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" required placeholder="John Doe">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" required placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" required placeholder="Project Collaboration">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" rows="5" required placeholder="Hi Sreeshma, I would love to connect..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span> <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo">
+                    <span class="logo-accent">&lt;</span>  Sreeshma U  <span class="logo-accent"></span>
+                </a>
+                <p>B.Tech Computer Science and Engineering Student | Aspiring AI & Software Developer</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <div class="footer-links-grid">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#achievements">Achievements</a>
+                </div>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Social Connections</h4>
+                <div class="footer-icons">
+                    <a href="#" class="social-icon" id="footer-github" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="#" class="social-icon" id="footer-linkedin" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" class="social-icon" id="footer-email" aria-label="Email"><i data-lucide="mail"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Sreeshma U. All rights reserved. Designed and developed with &hearts; using HTML, CSS, and JS.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Customizer Settings Panel (Modal Overlay) -->
+    <div class="customizer-modal-overlay" id="customizer-modal">
+        <div class="customizer-card glass-panel">
+            <div class="customizer-header">
+                <h3><i data-lucide="sliders"></i> Portfolio Customizer</h3>
+                <button class="btn-close-modal" id="btn-close-customizer" aria-label="Close Settings">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <div class="customizer-body">
+                <p class="customizer-intro">Use this panel to customize your portfolio. Changes are saved in your local browser storage and will persist upon refreshing.</p>
+                
+                <div class="customizer-tabs">
+                    <button class="tab-btn active" data-tab="tab-profile">Profile & Info</button>
+                    <button class="tab-btn" data-tab="tab-certs">Certifications</button>
+                </div>
+
+                <!-- Tab 1: Profile & Info -->
+                <div class="tab-content active" id="tab-profile">
+                    <div class="form-group">
+                        <label for="custom-photo">Profile Photo</label>
+                        <div class="photo-upload-preview-container">
+                            <div class="photo-preview-box" id="modal-photo-preview">SU</div>
+                            <div class="photo-upload-controls">
+                                <input type="file" id="custom-photo" accept="image/*" class="file-input">
+                                <label for="custom-photo" class="btn btn-secondary btn-sm">Select Image</label>
+                                <span class="file-info-text">Upload a square image for best results.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="custom-resume">Resume PDF</label>
+                        <div class="file-upload-container">
+                            <input type="file" id="custom-resume" accept="application/pdf" class="file-input">
+                            <label for="custom-resume" class="btn btn-secondary btn-sm" id="lbl-custom-resume">Choose PDF File</label>
+                            <span class="file-info-text" id="resume-file-name">No file selected</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="custom-email">Email Address</label>
+                            <input type="email" id="custom-email" placeholder="sreeshma.u@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="custom-phone">Phone Number</label>
+                            <input type="text" id="custom-phone" placeholder="+91 XXXXX XXXXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <label for="custom-linkedin">LinkedIn Username</label>
+                            <input type="text" id="custom-linkedin" placeholder="sreeshmau">
+                        </div>
+                        <div class="form-group">
+                            <label for="custom-github">GitHub Username</label>
+                            <input type="text" id="custom-github" placeholder="sreeshma-u">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Certifications -->
+                <div class="tab-content" id="tab-certs">
+                    <h4 class="sub-section-title">Add New Certification</h4>
+                    <div class="form-group">
+                        <label for="cert-title">Certificate Title</label>
+                        <input type="text" id="cert-title" placeholder="e.g. Introduction to Machine Learning">
+                    </div>
+                    <div class="form-group">
+                        <label for="cert-issuer">Issuing Organization</label>
+                        <input type="text" id="cert-issuer" placeholder="e.g. Coursera / Stanford">
+                    </div>
+                    <div class="form-group">
+                        <label for="cert-desc">Short Description</label>
+                        <input type="text" id="cert-desc" placeholder="e.g. Covered regression, classifiers, clustering techniques.">
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-sm" id="btn-add-cert">
+                        <i data-lucide="plus"></i> Add Certificate
+                    </button>
+
+                    <h4 class="sub-section-title list-header">Added Custom Certifications</h4>
+                    <div class="custom-certs-list" id="modal-certs-list">
+                        <!-- Filled by script -->
+                        <p class="empty-text">No custom certifications added yet.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="customizer-footer">
+                <button class="btn btn-outline btn-sm" id="btn-reset-customizer">Reset Defaults</button>
+                <button class="btn btn-primary btn-sm" id="btn-save-customizer">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
