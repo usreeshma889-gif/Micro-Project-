@@ -686,7 +686,7 @@ const translations = {
     volunteer: 'സേവനം',
     volunteering: 'സേവനം',
     contact: 'കൂട്ടുചേരാം'
-}s
+}
 };
 
 if (languageToggle) {
